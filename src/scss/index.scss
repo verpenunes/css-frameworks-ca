@@ -1,5 +1,18 @@
-$color: white;
+$background: black;
 
 body {
-    background-color: $color;
+    background-color: $background;
+}
+
+.card {
+    margin: 0 auto;
+}
+
+.card img {
+    height: 160px;
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: center;
 }
