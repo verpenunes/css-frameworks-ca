@@ -1,4 +1,4 @@
-$background: black;
+$background: rgb(33, 32, 33);
 
 body {
     background-color: $background;
@@ -18,5 +18,9 @@ body {
 }
 
 .newcard img {
-    height: 380px;
+    height: 410px;
+}
+
+form button {
+    margin-top: 4px;
 }
