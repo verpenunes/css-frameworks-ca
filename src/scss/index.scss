@@ -1,24 +1,17 @@
 $background: rgb(33, 32, 33);
+$margin: 0 auto;
 
 body {
     background-color: $background;
 }
 
 .card {
-    margin: 0 auto;
-}
-
-.card img {
-    height: 160px;
+    margin: $margin;
 }
 
 .nav-tabs {
     display: flex;
     justify-content: center;
-}
-
-.newcard img {
-    height: 410px;
 }
 
 form button {
