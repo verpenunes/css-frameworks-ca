@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(33, 32, 33);
+}
+
+.card {
+  margin: 0 auto;
+}
+
+form button {
+  margin-top: 4px;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+}
+
+i {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.css.map */
