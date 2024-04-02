@@ -9,17 +9,11 @@ body {
     margin: $margin;
 }
 
-form {
-    button {
-        margin-top: 4px;
-    }
-}
-
 .nav-tabs {
     display: flex;
     justify-content: center;
 }
 
-i {
-    cursor: pointer;
+form button {
+    margin-top: 4px;
 }
