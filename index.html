@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="d-flex align-items-center py-4">
+    <main class="w-100 m-auto form-container mt-5">
+        <div class="card">
+            <div class="card-body">
+             <form action="/profile.html" id="login">
+             <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+             <div class="form-floating mb-3">
+                <input type="email" for="email" class="form-control" id="emailInput" placeholder="name@example.com" required>
+                <small id="emailHelp" class="form-text text-muted">Please enter your email.</small>
+                <label for="emailInput" class="form-label">Email address</label>
+             </div>
+             <div class="form-floating">
+                <input type="password" for="password" class="form-control" id="floatingInput" pattern=".{8,}" placeholder="password" required>
+                <small class="form-text text-muted">Password must have minimum 8 characters.</small>
+                <label for="floatingInput">Password</label>
+             </div>
+             <div class="form-check text-start my-3">
+                <input type="checkbox" class="form-check-input" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">Remember me</label>
+             </div>
+             <button type="submit" class="btn btn-primary w-100 py-2">Sign in</button>
+             </form>
+            </div>
+        </div>
+    </main>
+</body>
+<footer>
+    <div class="">
+        <p></p>
+    </div>
+</footer>
+</html>

@@ -1,13 +1,14 @@
 body {
-  background-color: rgb(33, 32, 33);
+  background-color: rgb(50, 50, 50);
+}
+
+.form-container {
+  max-width: 300px;
+  padding: 1rem;
 }
 
 .card {
   margin: 0 auto;
-}
-
-form button {
-  margin-top: 4px;
 }
 
 .nav-tabs {
@@ -15,8 +16,8 @@ form button {
   justify-content: center;
 }
 
-i {
-  cursor: pointer;
+form button {
+  margin-top: 4px;
 }
 
 /*# sourceMappingURL=index.css.map */

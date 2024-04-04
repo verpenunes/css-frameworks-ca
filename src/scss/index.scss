@@ -1,8 +1,13 @@
-$background: rgb(33, 32, 33);
+$background: rgb(50, 50, 50);
 $margin: 0 auto;
 
 body {
     background-color: $background;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 1rem;
 }
 
 .card {
