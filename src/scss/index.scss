@@ -1,4 +1,4 @@
-$background: rgb(50, 50, 50);
+$background: rgb(158, 162, 163);
 $margin: 0 auto;
 
 body {
@@ -21,4 +21,9 @@ body {
 
 form button {
     margin-top: 4px;
+}
+
+.row img {
+    max-width: 300px;
+    height: 200px;
 }
