@@ -1,25 +1,9 @@
-$background: rgb(158, 162, 163);
-$margin: 0 auto;
+@import "variables";
+@import "login";
+@import "profile";
+@import "feed";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 body {
     background-color: $background;
 }
-
-.form-container {
-    max-width: 300px;
-    padding: 1rem;
-}
-
-.card {
-    margin: $margin;
-}
-
-.nav-tabs {
-    display: flex;
-    justify-content: center;
-}
-
-form button {
-    margin-top: 4px;
-}
-
