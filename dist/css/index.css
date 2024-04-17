@@ -5,13 +5,8 @@
 }
 
 .img-fluid {
-  max-height: 200px;
-  width: 300px;
-}
-
-.img-fluid {
-  max-height: 600px;
-  width: 800px;
+  min-height: 220px;
+  min-width: 150px;
 }
 
 /*!
@@ -11861,6 +11856,11 @@ textarea.form-control-lg {
 }
 body {
   background-color: rgb(79, 82, 92);
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=index.css.map */
