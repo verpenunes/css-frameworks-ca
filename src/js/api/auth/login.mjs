@@ -16,6 +16,8 @@ export async function login(profile) {
     body,
   });
 
+  console.log(profile);
+
   const { accessToken, ...user } = await response.json();
 
   storage.save("token", accessToken);
