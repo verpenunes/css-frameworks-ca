@@ -20,10 +20,13 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/profile/login/index.html">Login</a>
+                    <a class="nav-link" aria-current="page" href="/profile/login/">Login</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="#">Register</a>
+                    <a class="nav-link active" href="/profile/register/">Register</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/profile/edit/">Edit</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -40,25 +43,25 @@
           <div class="card-body">
             <h1 class="d-flex align-items-center justify-content-center text-muted display-6 fs-2 mb-4 mt-4">Welcome to ShareHub</h1>
 
-             <form id="registrationForm">
+            <form id="registerForm">
              <p class="h3 mb-3 fw-normal">Please register</p>
              <div class="form-floating mb-3">
-                <input type="name" for="name" class="form-control" name="name" id="nameInput" placeholder="name" required>
+                <input type="text" class="form-control" name="name" placeholder="name" required pattern="^[\w]+$">
                 <small id="nameHelp" class="form-text text-muted">Please enter your name.</small>
                 <label for="nameInput" class="form-label">Name</label>
              </div>
              <div class="form-floating mb-3">
-                <input type="email" for="email" class="form-control" name="email" id="emailInput" required pattern="^[\w\-.]+@(stud.)?noroff.no$" title="Only users of Noroff domain allowed (@stud.noroff.no or @noroff.no)">
+                <input type="email" class="form-control" name="email" required pattern="^[\w\-.]+@(stud.)?noroff.no$" title="Only users of Noroff domain allowed (@stud.noroff.no or @noroff.no)">
                 <small id="emailHelp" class="form-text text-muted">Please enter a valid Noroff email.</small>
                 <label for="emailInput" class="form-label">Email address</label>
              </div>
              <div class="form-floating">
-                <input type="password" for="password" class="form-control" name="password" id="passwordInput" pattern=".{8,}" minlength="8" placeholder="password" required>    
+                <input type="password" class="form-control" name="password" pattern=".{8,}" minlength="8" placeholder="password" required>    
                 <small class="form-text text-muted">Password must have minimum 8 characters.</small>
                 <label for="floatingInput">Password</label>
              </div>
              <button type="submit" class="btn btn-primary w-100 py-2">Register</button>
-             </form>
+            </form>
 
           </div>
         </div>

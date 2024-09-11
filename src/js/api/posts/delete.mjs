@@ -2,7 +2,7 @@ import { API_SOCIAL_URL } from "../constants.mjs";
 import { authFetch } from "../authFetch.mjs";
 
 const action = "/posts";
-const method = "delete";
+const method = "DELETE";
 
 export async function removePost(id) {
   if (!id) {

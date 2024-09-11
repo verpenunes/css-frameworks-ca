@@ -5,7 +5,8 @@ export function postTemplateA(postData) {
 export function postTemplateB(postData) {
   const post = document.createElement("div");
   post.classList.add("post");
-  post.innerText = postData.title;
+  post.innerHTML = postData.title;
+  post.innerHTML += `<div>${postData.id}</div>`;
 
   if (postData.media) {
     const img = document.createElement("img");
@@ -18,11 +19,15 @@ export function postTemplateB(postData) {
 }
 
 export function renderPostTemplate(postData, parent) {
-  // parent.innerHTML += postTemplateA(postData)
+  //parent.innerHTML += postTemplateA(postData);
   parent.append(postTemplateB(postData));
 }
 
 export function renderPostTemplates(postDataList, parent) {
   console.log(parent);
-  parent.append(...postDataList.map(postTemplateB));
+  postDataList.forEach((postData) => {
+    const postElement = postTemplateB(postData);
+    parent.append(postElement);
+    console.log(parent);
+  });
 }
